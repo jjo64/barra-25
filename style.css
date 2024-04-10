@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cuerpo de la pagina */
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #7fa0ed;
+}
+
+/* Menu de navegacion */
+
+.menu-navegacion {
+    /* Ajusta el margen derecho */
+    margin-left: auto;
+    padding-top: 25px;
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Cabeza de la pagina */
+
+.encabezado {
+    padding-top: 8%;
+}
+
+/* Estilos para la primera mitad del título */
+.encabezado h1 .red {
+    color: red; /* Color de la primera mitad del título */
+}
+
+/* Estilos para la segunda mitad del título */
+.encabezado h1 .white {
+    color: white; /* Color de la segunda mitad del título */
+}
+
+.encabezado h1 {
+    margin-left: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    letter-spacing: .075em;
+    line-height: .1em;
+    text-transform: none;
+}
+
+.encabezado img {
+    margin-left: 10%;
+    padding-top: 5%;
+    max-width: 80%; /* Ajusta el ancho máximo de la imagen */
+}
+
+.encabezado p {
+    font-size: 23px;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+/* Estilo para la sección de reservas */
+.reserva {
+    text-align: center; /* Centra el contenido horizontalmente */
+    margin-top: 5%; /* Ajusta el margen superior según sea necesario */
+}
+
+/* Estilo para el título "Reservas" */
+.reserva h2 {
+    font-size: 28px; /* Tamaño de fuente del título */
+    margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+}
+
+/* Estilo para el texto de reserva */
+.reserva p {
+    font-size: 18px; /* Tamaño de fuente del párrafo */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+
+/* Otros selectores */
+
+
+.entrantes, .desayunos, .almuerzos {
+    flex-direction: column;
+    margin-left: 40%;
+    font-size: 20px;
+    
+}
+
+/* Establecer display flex en la lista de entrantes */
+.entrantes, .desayunos, .almuerzos {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    align-items: baseline; /* Alinea los elementos en función de su línea base */
+}
+
+.entrantes {
+    margin-bottom: 70px; /* Añade un margen inferior adicional */
+}
+
+.desayunos {
+    margin-bottom: 70px; /* Añade un margen inferior adicional */
+}
+
+.almuerzos {
+    margin-bottom: 70px; /* Añade un margen inferior adicional */
+}
+
+
+/* Estilo para la lista de entrantes */
+.entrantes ul,
+.desayunos ul,
+.almuerzos ul {
+    margin-top: 20px;
+}
+
+.entrantes ul li,
+.desayunos ul li,
+.almuerzos ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.entrantes ul li span,
+.desayunos ul li span,
+.almuerzos ul li span {
+    flex: 1;
+}
+
+.entrantes ul li .precio,
+.desayunos ul li .precio,
+.almuerzos ul li .precio {
+    margin-left: 80px; /* Ajusta el margen izquierdo */
+    font-weight: bold;
+}
+
+.entrantes .plato,
+.desayunos .plato,
+.almuerzos .plato {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.entrantes .precio,
+.desayunos .precio,
+.almuerzos .precio {
+    margin-left: 80px; /* Ajusta el margen izquierdo */
+    font-weight: bold;
+}
+
+/* Estilo para los contenedores de las secciones de la carta */
+.secciones {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.contenedor-postres-bebidas {
+    margin-left: 30%; /* Alinea las secciones de postres y bebidas a la derecha */
+}
+
+.bebidas,
+.postres {
+    flex: 1 1 40%; /* Establece el tamaño base */
+    margin: 0 5% 20px 0; /* Margen derecho ajustado */
+    font-size: 20px;
+}
+
+/* Estilo para las secciones de bebidas y postres */
+.bebidas ul,
+.postres ul {
+    margin-top: 20px;
+}
+
+.postres {
+    margin-bottom: 70px; /* Añade un margen inferior adicional */
+}
+
+
+.bebidas ul li,
+.postres ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.bebidas ul li span,
+.postres ul li span {
+    flex: 1;
+}
+
+.bebidas ul li .precio,
+.postres ul li .precio {
+    margin-left: 80px; /* Ajusta el margen izquierdo */
+    font-weight: bold;
+}
+
+.bebidas .plato,
+.postres .plato {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.bebidas .precio,
+.postres .precio {
+    margin-left: 80px; /* Ajusta el margen izquierdo */
+    font-weight: bold;
+}
+
+
+
+.pie-de-pagina {
+    text-align: center;
+}
+
+.pie-de-pagina p {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+
+
+/* Contenedor para los elementos */
+.album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    margin-bottom: 5%;
+}
+
+/* Estilo para cada elemento */
+.image-card {
+    position: relative;
+    width: 400px; /* Ancho fijo para cada elemento */
+    height: 300px; /* Altura fija para cada elemento */
+    overflow: hidden;
+    margin: 10px; /* Espacio entre elementos */
+}
+
+.flip-card {
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+    background-color: transparent;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.flip-card-back p {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el contenedor del mapa */
+.map-container {
+    margin: 20px auto; /* Centra horizontalmente y agrega un margen */
+    max-width: 600px; /* Define el ancho máximo del contenedor */
+}
+
+/* Estilos para el mapa */
+.mapa iframe {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 450px; /* Altura fija */
+    border: none; /* Elimina el borde del mapa */
+    border-radius: 10px; /* Agrega un borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra alrededor del mapa */
+}
+
+
+
+
+
+
+
+
