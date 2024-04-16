@@ -334,6 +334,45 @@ nav a:hover {
 }
 
 
+/* Ocultar todas las diapositivas por defecto */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.carousel-navigation span {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-navigation span.active {
+    background-color: #333;
+}
+
+
 
 
 
