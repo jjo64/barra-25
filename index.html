@@ -7,6 +7,9 @@
     <title>Barra 25</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="imagenes/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -24,20 +27,37 @@
         </div>
         <header>
             <div class="encabezado">
-                <h1><span class="red">Bar</span> <span class="white">ra25</span></h1>
-                <img src="imagenes/portada.jpg" alt="logo-restaurante" class="logo-restaurante">
-                <p>Somos un bar/hosteleria que se dedica a la elaboracion
-                de comida peruana.
-                </p>
+                <h1><span class="rojo">Barr</span><span class="blanco">a25</span></h1>
             </div>
-            <div class="carousel-container">
-                <div class="carousel">
-                    <img src="imagenes/portada.jpg" alt="Imagen 1" class="active">
-                    <img src="imagenes/plato-1.jpg" alt="Imagen 2">
-                    <img src="imagenes/plato-2.jpg" alt="Imagen 3">
-                    <img src="imagenes/plato-3.jpg" alt="Imagen 4">
-                </div>
-                <div class="carousel-navigation"></div>
+            <div class="carousel">
+                <img class="active" src="imagenes/portada.jpg" alt="Imagen 1">
+                <img src="imagenes/portada.jpg" alt="Imagen 2">
+                <img src="imagenes/portada.jpg" alt="Imagen 3">
+                <img src="imagenes/portada.jpg" alt="Imagen 4">
+            </div>
+
+            <div class="indicators">
+                <span class="active" onclick="currentSlide(1)"></span>
+                <span onclick="currentSlide(2)"></span>
+                <span onclick="currentSlide(3)"></span>
+                <span onclick="currentSlide(4)"></span>
+            </div>
+            <div>
+                <p>Bienvenido a nuestro rincón de Perú en el corazón de Móstoles. En nuestro restaurante, te invitamos a embarcarte en un viaje culinario a través de los sabores y aromas únicos de la cocina peruana.
+
+                    Ubicados en la pintoresca calle Río Sella 5, en Móstoles, nuestro establecimiento ofrece una experiencia gastronómica auténtica y acogedora.
+                    <br>
+                    
+                    Nuestro menú está cuidadosamente elaborado para deleitar tu paladar con platos tradicionales peruanos, preparados con ingredientes frescos y auténticos. Desde ceviches frescos y tiraditos exquisitos hasta deliciosos anticuchos y sabrosos platos de arroz, cada bocado te transportará directamente a las calles de Lima.
+                    <br>
+                    Además de nuestra oferta gastronómica, nuestro bar ofrece una selección especial de cócteles peruanos y bebidas refrescantes, perfectas para acompañar tu comida y compartir momentos inolvidables con amigos y familiares.
+                    
+                    Ya sea que estés buscando una cena íntima para dos, una reunión con amigos o un evento especial, nuestro equipo dedicado está aquí para brindarte una experiencia inolvidable. 
+                    <br>
+                    Nos esforzamos por superar tus expectativas y crear recuerdos duraderos en cada visita.
+                    
+                    Ven y descubre el encanto de la cocina peruana en nuestro restaurante en la calle Río Sella 5, en Móstoles. ¡Te esperamos con los brazos abiertos y los sabores más auténticos de Perú!
+                    </p>
             </div>            
         </header>
         <div class="reserva">
@@ -195,6 +215,19 @@
                 </div>
             </div>
         </div>
+        <div class="sobre-nosotros">
+            <section id="sobre-nosotros">
+                <p>
+                    ¡Bienvenidos a Barra 25!
+    
+    Somos mucho más que un restaurante. Somos el sueño hecho realidad de Cristhian, un chef con 20 años de experiencia que ha viajado desde las calles bulliciosas de Lima hasta las cocinas más prestigiosas de Argentina y España.
+    
+    Con pasión y creatividad, fusionamos los sabores de tres continentes en platos únicos y deliciosos. Nuestro plato estrella es el ceviche, una explosión de frescura y sabor que te transportará directamente a las costas de Perú.
+    
+    En Barra 25, cada comida es una experiencia, cada plato es una historia y cada visita es un viaje culinario que nunca olvidarás. ¡Ven y descubre el auténtico sabor de América Latina en el corazón de Móstoles, en Calle Río Sella 5!
+                </p>
+            </section>
+        </div>
         <div class="map-container">
             <section id="encuentranos">
                 <div class="mapa">
@@ -202,26 +235,12 @@
                 </div>
             </section>
         </div>
-            
-        <div class="redes-sociales">
-            <section id="contacto">
-            <!-- Agrega el script de Facebook -->
-                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v12.0&appId=TU_APP_ID&autoLogAppEvents=1" nonce="DPP8Dl6h"></script>
-            <!-- Agrega el div para mostrar las publicaciones de Facebook -->
-            <div class="fb-page" data-href="https://m.facebook.com/61550500213162/" data-tabs="timeline" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                <blockquote cite="https://m.facebook.com/61550500213162/" class="fb-xfbml-parse-ignore">
-                    <a href="https://m.facebook.com/61550500213162/">Barra 25</a>
-                </blockquote>
-            </div>
-            </section>
-        </div>
     </div>
     <div class="pie-de-pagina">
         <footer>
-            <h3 style="text-align:center;white-space:pre-wrap;">© 2022 BARRA 25 Madrid S.L.</h3>
+            <h3> © 2022 BARRA 25 Madrid S.L.</h3>
             <p>Calle Rio Sella 5
-                <br><br>
-                28934 Mostoles, Madrid
+                <br><br>28934 Mostoles, Madrid
             </p>
         </footer>
     </div>

@@ -4,17 +4,14 @@
     box-sizing: border-box;
 }
 
-/* Cuerpo de la pagina */
-
+/* Cuerpo de la página */
 body {
-    font-family: "Inter", sans-serif;
     background-color: #7fa0ed;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* Menu de navegacion */
-
+/* Menu de navegación */
 .menu-navegacion {
-    /* Ajusta el margen derecho */
     margin-left: auto;
     padding-top: 25px;
     float: right;
@@ -37,20 +34,9 @@ nav a:hover {
     color: #ffcc00;
 }
 
-/* Cabeza de la pagina */
-
+/* Cabecera de la página */
 .encabezado {
     padding-top: 8%;
-}
-
-/* Estilos para la primera mitad del título */
-.encabezado h1 .red {
-    color: red; /* Color de la primera mitad del título */
-}
-
-/* Estilos para la segunda mitad del título */
-.encabezado h1 .white {
-    color: white; /* Color de la segunda mitad del título */
 }
 
 .encabezado h1 {
@@ -63,10 +49,13 @@ nav a:hover {
     text-transform: none;
 }
 
-.encabezado img {
-    margin-left: 10%;
-    padding-top: 5%;
-    max-width: 80%; /* Ajusta el ancho máximo de la imagen */
+.rojo {
+    color: red;
+}
+
+.blanco {
+    color: white;
+    padding: 2px 5px; /* Opcional: para agregar un poco de espacio alrededor de "a25" */
 }
 
 .encabezado p {
@@ -75,97 +64,43 @@ nav a:hover {
     margin-top: 2%;
 }
 
-/* Estilo para la sección de reservas */
+/* Sección de reservas */
 .reserva {
-    text-align: center; /* Centra el contenido horizontalmente */
-    margin-top: 5%; /* Ajusta el margen superior según sea necesario */
+    text-align: center;
+    margin-top: 5%;
 }
 
-/* Estilo para el título "Reservas" */
 .reserva h2 {
-    font-size: 28px; /* Tamaño de fuente del título */
-    margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 
-/* Estilo para el texto de reserva */
 .reserva p {
-    font-size: 18px; /* Tamaño de fuente del párrafo */
-    line-height: 1.5; /* Espaciado entre líneas */
+    font-size: 18px;
+    line-height: 1.5;
 }
-
 
 /* Otros selectores */
-
-
 .entrantes, .desayunos, .almuerzos {
     flex-direction: column;
     margin-left: 40%;
     font-size: 20px;
-    
 }
 
 /* Establecer display flex en la lista de entrantes */
-.entrantes, .desayunos, .almuerzos {
-    display: flex;
-    flex-direction: column; /* Alinea los elementos verticalmente */
-    align-items: baseline; /* Alinea los elementos en función de su línea base */
-}
-
-.entrantes {
-    margin-bottom: 70px; /* Añade un margen inferior adicional */
-}
-
-.desayunos {
-    margin-bottom: 70px; /* Añade un margen inferior adicional */
-}
-
-.almuerzos {
-    margin-bottom: 70px; /* Añade un margen inferior adicional */
-}
-
-
-/* Estilo para la lista de entrantes */
-.entrantes ul,
-.desayunos ul,
-.almuerzos ul {
+.entrantes ul, .desayunos ul, .almuerzos ul {
     margin-top: 20px;
 }
 
-.entrantes ul li,
-.desayunos ul li,
-.almuerzos ul li {
+.entrantes ul li, .desayunos ul li, .almuerzos ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 25px;
 }
 
-.entrantes ul li span,
-.desayunos ul li span,
-.almuerzos ul li span {
-    flex: 1;
-}
-
-.entrantes ul li .precio,
-.desayunos ul li .precio,
-.almuerzos ul li .precio {
-    margin-left: 80px; /* Ajusta el margen izquierdo */
-    font-weight: bold;
-}
-
-.entrantes .plato,
-.desayunos .plato,
-.almuerzos .plato {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.entrantes .precio,
-.desayunos .precio,
-.almuerzos .precio {
-    margin-left: 80px; /* Ajusta el margen izquierdo */
+.entrantes ul li .precio, .desayunos ul li .precio, .almuerzos ul li .precio {
+    margin-left: 80px;
     font-weight: bold;
 }
 
@@ -177,88 +112,47 @@ nav a:hover {
 }
 
 .contenedor-postres-bebidas {
-    margin-left: 30%; /* Alinea las secciones de postres y bebidas a la derecha */
+    margin-left: 30%;
 }
 
-.bebidas,
-.postres {
-    flex: 1 1 40%; /* Establece el tamaño base */
-    margin: 0 5% 20px 0; /* Margen derecho ajustado */
+.bebidas, .postres {
+    flex: 1 1 40%;
+    margin: 0 5% 20px 0;
     font-size: 20px;
 }
 
 /* Estilo para las secciones de bebidas y postres */
-.bebidas ul,
-.postres ul {
+.bebidas ul, .postres ul {
     margin-top: 20px;
 }
 
-.postres {
-    margin-bottom: 70px; /* Añade un margen inferior adicional */
-}
-
-
-.bebidas ul li,
-.postres ul li {
+.bebidas ul li, .postres ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 25px;
 }
 
-.bebidas ul li span,
-.postres ul li span {
-    flex: 1;
-}
-
-.bebidas ul li .precio,
-.postres ul li .precio {
-    margin-left: 80px; /* Ajusta el margen izquierdo */
+.bebidas ul li .precio, .postres ul li .precio {
+    margin-left: 80px;
     font-weight: bold;
 }
-
-.bebidas .plato,
-.postres .plato {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.bebidas .precio,
-.postres .precio {
-    margin-left: 80px; /* Ajusta el margen izquierdo */
-    font-weight: bold;
-}
-
-
-
-.pie-de-pagina {
-    text-align: center;
-}
-
-.pie-de-pagina p {
-    margin-top: 10px;
-    margin-bottom: 25px;
-}
-
-
 
 /* Contenedor para los elementos */
 .album {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centra los elementos horizontalmente */
+    justify-content: center;
     margin-bottom: 5%;
 }
 
 /* Estilo para cada elemento */
 .image-card {
     position: relative;
-    width: 400px; /* Ancho fijo para cada elemento */
-    height: 300px; /* Altura fija para cada elemento */
+    width: 400px;
+    height: 300px;
     overflow: hidden;
-    margin: 10px; /* Espacio entre elementos */
+    margin: 10px;
 }
 
 .flip-card {
@@ -278,8 +172,7 @@ nav a:hover {
     transform: rotateY(180deg);
 }
 
-.flip-card-front,
-.flip-card-back {
+.flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -289,13 +182,13 @@ nav a:hover {
 .flip-card-front img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Ajusta la imagen para que quepa dentro del contenedor */
-    object-position: center; /* Opcional: centra la imagen dentro del contenedor */
+    object-fit: contain;
+    object-position: center;
 }
 
 #plato-6 {
-    width: 80%; /* Cambia el ancho de la imagen según sea necesario */
-    height: 100%; /* Cambia la altura de la imagen según sea necesario */
+    width: 80%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
 }
@@ -320,56 +213,55 @@ nav a:hover {
 
 /* Estilos para el contenedor del mapa */
 .map-container {
-    margin: 20px auto; /* Centra horizontalmente y agrega un margen */
-    max-width: 600px; /* Define el ancho máximo del contenedor */
+    margin: 20px auto;
+    max-width: 600px;
 }
 
 /* Estilos para el mapa */
 .mapa iframe {
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    height: 450px; /* Altura fija */
-    border: none; /* Elimina el borde del mapa */
-    border-radius: 10px; /* Agrega un borde redondeado */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra alrededor del mapa */
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 
 /* Ocultar todas las diapositivas por defecto */
-.carousel-container {
+.carousel {
     position: relative;
-    width: 100%;
+    width: 70%;
+    height: 600px;
+    margin: auto;
     overflow: hidden;
 }
-
-.carousel {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
 .carousel img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    display: none;
+    object-fit: contain;
 }
-
-.carousel-navigation {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
+.carousel img.active {
+    display: block;
 }
-
-.carousel-navigation span {
-    width: 10px;
-    height: 10px;
-    background-color: #ccc;
-    border-radius: 50%;
-    margin: 0 5px;
+.indicators {
+    text-align: center;
+}
+.indicators span {
     cursor: pointer;
+    height: 5px;
+    width: 30px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.indicators span.active {
+    background-color: #717171;
 }
 
-.carousel-navigation span.active {
-    background-color: #333;
+.pie-de-pagina {
+    text-align: center;
+    white-space: pre-wrap;
 }
 
 

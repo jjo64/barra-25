@@ -1,47 +1,25 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const carousel = document.querySelector('.carousel');
-    const images = document.querySelectorAll('.carousel img');
-    const navigation = document.querySelector('.carousel-navigation');
+var slideIndex = 0;
+showSlides();
 
-    let currentIndex = 0;
-    const intervalTime = 3000;
+function showSlides() {
+  var i;
+  var slides = document.querySelectorAll(".carousel img");
+  var dots = document.querySelectorAll(".indicators span");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 6000); // Cambia la imagen cada 6 segundos
+}
 
-    // Calcular el ancho del carrusel basado en el número de imágenes
-    const carouselWidth = carousel.clientWidth * images.length;
-    carousel.style.width = `${carouselWidth}px`;
+function currentSlide(n) {
+  slideIndex = n - 1;
+  showSlides();
+}
 
-    function changeImage(index) {
-        currentIndex = index;
-        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-        updateNavigation();
-    }
-
-    function updateNavigation() {
-        navigation.querySelectorAll('span').forEach((dot, index) => {
-            if (index === currentIndex) {
-                dot.classList.add('active');
-            } else {
-                dot.classList.remove('active');
-            }
-        });
-    }
-
-    function initNavigation() {
-        images.forEach((_, index) => {
-            const dot = document.createElement('span');
-            dot.addEventListener('click', () => changeImage(index));
-            navigation.appendChild(dot);
-        });
-        updateNavigation();
-    }
-
-    function startCarousel() {
-        setInterval(() => {
-            currentIndex = (currentIndex + 1) % images.length;
-            changeImage(currentIndex);
-        }, intervalTime);
-    }
-
-    initNavigation();
-    startCarousel();
-});
