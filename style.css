@@ -263,9 +263,6 @@ nav a:hover {
     text-align: center;
     white-space: pre-wrap;
 }
-.sobre-nosotros {
-    
-}
 
 /*Responsive Design*/
 
@@ -362,7 +359,6 @@ nav a:hover {
 
     .pie-de-pagina {
         margin-top: 100%;
-        margin-bottom: 35%;
     }
 
 }
